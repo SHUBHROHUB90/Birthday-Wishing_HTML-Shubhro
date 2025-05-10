@@ -1,0 +1,177 @@
+<!Shubhro's_Codeing_HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday_Wishing/SHUBHRO~</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffe6f0, #fff0e6);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      background: #fff9f0;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      color: #d63384;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #ff6f61;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: 30px auto;
+      overflow: hidden;
+      border-radius: 10px;
+      aspect-ratio: 4 / 3; /* Responsive ratio without fixed height */
+    }
+
+    .slides {
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .slides img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .signature {
+      font-weight: bold;
+      color: #c0392b;
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
+    .audio-controls {
+      margin-top: 20px;
+    }
+
+    .audio-controls button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #ff6f61;
+      color: white;
+      cursor: pointer;
+    }
+
+    .audio-controls button:hover {
+      background-color: #e85b50;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" autoplay loop>
+    <source src="background.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <h1>Happy Birthday ~TINA SONA❤️😘❤️</h1>
+    <h2>জন্মদিনের অনেক অনেক শুভেচ্ছা!</h2>
+    <p>
+      এই বিশেষ দিনে তোমার জীবনের প্রতিটি মুহূর্ত হয়ে উটুক রঙ্গিন, আনন্দময় এবং স্মরণীয়।<br>
+      তোমার হাসি যেন চিরকাল অটুট থাকে, আর তোমার স্বপ্নদশমূলো এক এক করে সত্যি হোক।
+    </p>
+    <p>
+      তোমার মতো একটি সুন্দর হৃদয়ের মানুষলকে পাওয়া ভাগ্যের ব্যাপার।<br>
+      আজ শুধু তোমার দিন য়াই আনন্দ করো, হাসো, ভালো থেকো।<br>
+      শুভ জন্মদিন প্রিয়া!
+    </p>
+
+    <div class="slideshow-container landscape and portrait">
+      <div class="slides active"><img src="IMG_20241117_204909.jpg" alt="Photo 1"></div>
+      <div class="slides"><img src="IMG_20241230_184215.jpg" alt="Photo 2"></div>
+      <div class="slides"><img src="IMG_20250423_212551.jpg" alt="Photo 3"></div>
+      <div class="slides"><img src="IMG_20241212_200517.jpg" alt="Photo 4"></div>
+      <div class="slides"><img src="IMG_20241203_130018.jpg" alt="Photo 5"></div>
+      <div class="slides"><img src="IMG_20241212_194105.jpg" alt="Photo 6"></div>
+      <div class="slides"><img src="IMG_20241230_190221.jpg" alt="Photo 7"></div>
+      <div class="slides"><img src="IMG_20250123_122803.jpg" alt="Photo 8"></div>
+      <div class="slides"><img src="IMG_20241117_212706.jpg" alt="Photo 9"></div>
+      <div class="slides"><img src="IMG_20241230_190326.jpg" alt="Photo 10"></div>
+      <div class="slides"><img src="IMG_20241212_194806.jpg" alt="Photo 11"></div>
+      <div class="slides"><img src="IMG_20241118_073900.jpg" alt="Photo 12"></div>
+      <div class="slides"><img src="IMG_20250123_120531.jpg" alt="Photo 13"></div>
+      <div class="slides"><img src="IMG_20241211_193951.jpg" alt="Photo 14"></div>
+      <div class="slides"><img src="IMG_20250416_165930.jpg" alt="Photo 15"></div>
+      <div class="slides"><img src="IMG_20250423_213705.jpg" alt="Photo 16"></div>
+      <div class="slides"><img src="IMG_20250416_165442.jpg" alt="Photo 17"></div>
+      <div class="slides"><img src="IMG_20250510_135140.jpg" alt="Photo 18"></div>
+      <div class="slides"><img src="IMG_20250423_213235.jpg" alt="Photo 19"></div>
+    </div>
+
+    <p class="signature">
+      — তোমার প্রিয় মানুষ
+    </p>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    const slides = document.getElementsByClassName("slides");
+
+    function showSlides() {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active");
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].classList.add("active");
+      setTimeout(showSlides, 3000); // Change every 3 seconds
+    }
+    showSlides();
+
+    const bgMusic = document.getElementById("bgMusic");
+    function playMusic() {
+      bgMusic.play();
+    }
+    function pauseMusic() {
+      bgMusic.pause();
+    }
+  </script>
+
+</body>
+</html>
